@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9efdb;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.adresse {
+    text-align: right;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    margin-right: 40px;
+    color: #4A3C31;
+}
+
+.adresse p {
+    margin: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#logo {
+    width: 300px;
+    height: 300px;
+}
+
+.titre {
+    font-family: 'Courier Prime', monospace;
+    font-size: 48px;
+    color: #C6363C;
+    margin-left: 20px;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #4A3C31;
+    border-bottom: 2px solid #4A3C31;
+    padding: 15px 0;
+}
+
+.menu_navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.menu_navigation a {
+    text-decoration: none;
+    color: #4A3C31;
+    font-family: 'DM Sans', sans-serif;
+    ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#titre2 {
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+    color: #C6363C;
+    margin: 40px 0;
+}
