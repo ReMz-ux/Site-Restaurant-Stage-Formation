@@ -18,16 +18,29 @@ header {
 }
 
 .adresse {
-    text-align: right;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     margin-right: 40px;
     color: #4A3C31;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.adresse p {
+.adresse-text {
+    text-align: right;
+}
+
+.adresse-text p {
     margin: 15px;
     font-family: 'DM Sans', sans-serif;
+}
+
+.adresse-icon {
+    height: 2em;
+    width: 2em;
+    object-fit: contain;
 }
 
 #logo {
@@ -40,6 +53,7 @@ header {
     font-size: 48px;
     color: #C6363C;
     margin-left: 20px;
+    font-weight: bold;
 }
 
 nav {
@@ -68,10 +82,195 @@ nav {
     font-weight: bold;
 }
 
-#titre2 {
+
+/* --- Section Événements --- */
+main {
+    width: 100%;
+    margin: 30px 0;
+    padding: 24px 28px;
+    box-sizing: border-box;
+    background-color: #f9efdb;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 34px 36px;
+    justify-items: center;
+    align-items: start;
+}
+
+#titre-evenements {
+    grid-column: 1 / -1;
     text-align: center;
     font-family: 'Courier Prime', monospace;
-    font-size: 30px;
+    font-size: 32px;
     color: #C6363C;
-    margin: 40px 0;
+    margin: 0 0 10px 0;
+}
+
+.evenement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+/* Titre des cartes — priorité élevée pour éviter les surcharges globales */
+main .evenement {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+}
+
+h3 {
+    margin: 0 0 8px 0;
+    color: #C6363C;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.evenement-image {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #fff;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.evenement {
+    max-width: 260px;
+    color: #4A3C31;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.description {
+    font-family: 'DM Sans', sans-serif;
+    color: #4A3C31;
+    text-align: center;
+}
+
+main img:hover {
+    transform: scale(1.20);
+    transition: transform 0.3s ease;
+}
+
+
+/* Footer */
+.site-footer {
+    background-color: #f9efdb;
+    color: #4A3C31;
+    padding: 30px 40px 25px;
+    border-top: 2px solid #4A3C31;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.footer-nav a {
+    color: #4A3C31;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-hours {
+    text-align: center;
+    line-height: 1.5;
+    flex: 1;
+    font-size: 15px;
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.footer-social {
+    min-width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.social-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #4A3C31;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+
+/* Responsive: 2 colonnes */
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 28px 24px;
+    }
+}
+
+/* Responsive: 1 colonne */
+@media (max-width: 560px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 18px;
+    }
+
+    .evenement-image {
+        width: 90%;
+        max-width: none;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
 }

@@ -90,6 +90,10 @@ nav {
     margin: 40px 0;
 }
 
+li:hover a {
+    color: #C6363C;
+}
+
 /* Style du carrousel */
 .carousel-container {
     max-width: 1000px;
@@ -166,6 +170,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    text-decoration: none;
 }
 
 .footer-nav a {

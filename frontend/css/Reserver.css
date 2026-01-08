@@ -7,8 +7,14 @@ body {
 
 header {
     display: flex;
+    background-color: #f9efdb;
     flex-direction: column;
 }
+
+ul:hover {
+    color: #C6363C;
+}
+
 
 .header {
     display: flex;
@@ -18,16 +24,29 @@ header {
 }
 
 .adresse {
-    text-align: right;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     margin-right: 40px;
     color: #4A3C31;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.adresse p {
+.adresse-text {
+    text-align: right;
+}
+
+.adresse-text p {
     margin: 15px;
     font-family: 'DM Sans', sans-serif;
+}
+
+.adresse-icon {
+    height: 2em;
+    width: 2em;
+    object-fit: contain;
 }
 
 #logo {
@@ -40,6 +59,7 @@ header {
     font-size: 48px;
     color: #C6363C;
     margin-left: 20px;
+    font-weight: bold;
 }
 
 nav {
@@ -48,6 +68,7 @@ nav {
     border-top: 2px solid #4A3C31;
     border-bottom: 2px solid #4A3C31;
     padding: 15px 0;
+    background-color: #f9efdb;
 }
 
 .menu_navigation {
@@ -63,15 +84,346 @@ nav {
     text-decoration: none;
     color: #4A3C31;
     font-family: 'DM Sans', sans-serif;
-    ;
     font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu_navigation a:hover {
+    color: var(--color-primary);
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 32px;
+    color: #C6363C;
+    margin-bottom: 40px;
     font-weight: bold;
 }
 
-#titre2 {
+/* ===== Formulaire de Réservation ===== */
+.reservation-form {
+    background-color: #4A3C31;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.reservation-form label {
+    color: #f9efdb;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.reservation-form label[for="name"],
+.reservation-form label[for="email"],
+.reservation-form label[for="phone"],
+.reservation-form label[for="guests"] {
     text-align: center;
-    font-family: 'Courier Prime', monospace;
-    font-size: 30px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="number"] {
+    margin: 0 auto;
+    display: block;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="number"],
+.reservation-form input[type="date"],
+.reservation-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="number"] {
+    width: 50%;
+}
+
+.reservation-form input[type="text"]:focus,
+.reservation-form input[type="email"]:focus,
+.reservation-form input[type="tel"]:focus,
+.reservation-form input[type="number"]:focus,
+.reservation-form input[type="date"]:focus,
+.reservation-form select:focus {
+    outline: none;
+    border-color: #C6363C;
+    background-color: #fff;
+}
+
+.reservation-form select {
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+/* ===== Selection Réservation ===== */
+.selection-reservation {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.selection-reservation label {
+    display: block;
+    margin-bottom: 8px;
+    color: #f9efdb;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.selection-reservation label[for="date"] {
+    width: 100%;
+}
+
+.selection-reservation input[type="date"],
+.selection-reservation select {
+    width: 100%;
+    display: block;
+}
+
+.selection-reservation>div {
+    flex: 1;
+}
+
+/* ===== Bouton de Réservation ===== */
+.reservation-form button {
+    background-color: #C6363C;
+    color: #f9efdb;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    align-self: center;
+    min-width: 250px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.reservation-form button:hover {
+    background-color: #a12a2f;
+    transform: translateY(-2px);
+}
+
+.reservation-form button:active {
+    transform: translateY(0);
+}
+
+.site-footer {
+    background-color: #f9efdb;
+    color: #4A3C31;
+    padding: 30px 40px 25px;
+    border-top: 2px solid #4A3C31;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.footer-nav a {
+    color: #4A3C31;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.footer-nav a:hover {
+    text-decoration: none;
     color: #C6363C;
-    margin: 40px 0;
+}
+
+.footer-hours {
+    text-align: center;
+    line-height: 1.5;
+    flex: 1;
+    font-size: 15px;
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.footer-social {
+    min-width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.social-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #4A3C31;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .header .titre {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .adresse {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .menu_navigation {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .reservation-form {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    main>h2 {
+        font-size: 26px;
+    }
+
+    .reservation-form button {
+        min-width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header .titre {
+        font-size: 22px;
+    }
+
+    .adresse {
+        font-size: 12px;
+    }
+
+    nav {
+        padding: 10px 15px;
+    }
+
+    .menu_navigation {
+        gap: 15px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    .reservation-form {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    main>h2 {
+        font-size: 22px;
+    }
+
+    .reservation-form button {
+        min-width: 100%;
+        padding: 12px 20px;
+    }
+
+    .reservation-form input[type="text"],
+    .reservation-form input[type="email"],
+    .reservation-form input[type="tel"],
+    .reservation-form input[type="number"],
+    .reservation-form input[type="date"],
+    .reservation-form select {
+        font-size: 16px;
+    }
 }
