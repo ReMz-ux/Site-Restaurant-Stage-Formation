@@ -56,7 +56,19 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu_navigation img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 60px;
+}
+
+.menu_navigation img:last-child {
+    margin-right: 0;
 }
 
 .menu_navigation a {

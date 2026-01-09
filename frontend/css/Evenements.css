@@ -70,7 +70,19 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu_navigation img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 60px;
+}
+
+.menu_navigation img:last-child {
+    margin-right: 0;
 }
 
 .menu_navigation a {
@@ -80,6 +92,10 @@ nav {
     ;
     font-size: 20px;
     font-weight: bold;
+}
+
+li:hover a {
+    color: #C6363C;
 }
 
 
@@ -115,7 +131,7 @@ main {
     gap: 8px;
 }
 
-/* Titre des cartes — priorité élevée pour éviter les surcharges globales */
+
 main .evenement {
     text-align: center;
     font-size: 18px;
@@ -199,6 +215,15 @@ main img:hover {
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+footer a {
+    color: #4A3C31;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C6363C;
 }
 
 .footer-hours {
