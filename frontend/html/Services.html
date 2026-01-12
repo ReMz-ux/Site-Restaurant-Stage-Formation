@@ -15,19 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Votre CSS personnalisé (doit être APRÈS Bootstrap pour pouvoir l'écraser) -->
     <link rel="stylesheet" href="../css/Services.css">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="header">
-        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo"></a>
-        <h1 class="titre">La Guinguette de Villedubert</h1>
-        <div class="adresse">
-            <p>1 route d'orbiel, 11800</p>
-            <p>Villedubert</p>
+        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo" data-aos="zoom-in-right"></a>
+        <h1 class="titre" data-aos="fade-down">La Guinguette de Villedubert</h1>
+        <div class="adresse" data-aos="fade-left">
+          <img class="adresse-icon" src="/Image Resto/epingle.png" alt="Icône adresse">
+          <div class="adresse-text">
+            <p>1 route d'orbiel</p>
+            <p>11800 Villedubert</p>
             <p>06.87.82.54.64</p>
+          </div>
         </div>
     </div>
-    <nav>
+    <nav data-aos="zoom-in">
         <ul class="menu_navigation">
             <li><a href="Reserver.html">Reserver</a></li>
             <img id="emote-resa" src="/Image Resto/reservation.png" alt="">
@@ -40,6 +45,57 @@
         </ul>
     </nav>
 </header>
+<main>
+    <h2 class="titre2" data-aos="flip-right">Services</h2>
+    <div class="service-content" data-aos="flip-right">
+        <h3>Plateau Apéro a emporter</h3>
+        <div class="plateau01">
+        <img src="/Image Resto/Plateau 04.png" alt="plateau">
+        </div>
+        <p>Envie d'un apéritif réussi sans passer des heures en cuisine ? Découvrez nos planches de charcuterie et fromages à emporter. Composés avec passion, nos plateaux réunissent le meilleur du terroir : chiffonnade de jambon cru affiné, saucissons artisanaux, fromages de caractère et pickles croquants. Que ce soit pour une soirée improvisée entre amis ou un dîner sur le pouce, emportez la convivialité de la Guinguette directement dans votre salon.</p>
+        <div class="plateau02">
+        <img src="/Image Resto/Plateau 02.jpeg" alt="plateau">
+        </div>
+    </div>
+</main>
+<footer class="site-footer" data-aos="zoom-out">
+  <div class="footer-content">
+    <div class="footer-nav">
+      <ul>
+        <li><a href="Reserver.html">Reserver</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Evenements.html">Evenements</a></li>
+        <li><a href="A propos.html">A propos</a></li>
+      </ul>
+    </div>
+    <div class="footer-hours">
+      <p class="footer-title">Horaires :</p>
+      <p>Week-end 11h-14h / 18h30-22h</p>
+      <p>Semaine 11h-14h / 18h30-22h</p>
+      <p>Fermé dimanche soir et lundi et mardi toute la journée</p>
+    </div>
+    <div class="footer-social">
+      <p class="footer-title">Réseaux sociaux</p>
+      <div class="social-item">
+        <img src="/Image Resto/pngegg (2).png" alt="Logo Facebook">
+        <span><a href="https://www.facebook.com/profile.php?id=100091706222257">Facebook</a></span>
+      </div>
+      <div class="social-item">
+        <img src="/Image Resto/pngegg (3).png" alt="Logo Instagram">
+        <span><a href="">Instagram</a></span>
+      </div>
+    </div>
+  </div>
+    <p class="footer-copyright">&copy; 2026 La Guinguette de Villedubert, Tous droits réservés.</p>
+  </div>
+</footer>
     
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, /* Durée de l'animation en millisecondes (1000ms = 1s) */
+    once: true,     /* L'animation ne se joue qu'une seule fois (plus élégant) */
+  });
+</script>
 </body>
 </html>

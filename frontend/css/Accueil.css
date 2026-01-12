@@ -285,3 +285,92 @@ footer a:hover {
         text-align: center;
     }
 }
+
+/* ===== Responsive commun ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .titre {
+        font-size: 28px;
+        margin: 8px 0 0;
+        text-align: center;
+    }
+
+    .adresse {
+        font-size: 14px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav {
+        padding: 10px 12px;
+    }
+
+    .menu_navigation {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .menu_navigation img {
+        width: 20px;
+        height: 20px;
+        margin-right: 24px;
+    }
+
+    #titre2 {
+        font-size: 24px;
+        margin: 24px 0;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .carousel-inner img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .titre {
+        font-size: 22px;
+    }
+
+    .menu_navigation {
+        gap: 16px;
+    }
+
+    .menu_navigation img {
+        margin-right: 16px;
+    }
+
+    .carousel-caption {
+        padding: 12px;
+        bottom: 20px !important;
+    }
+}

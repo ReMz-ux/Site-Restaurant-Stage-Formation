@@ -299,3 +299,99 @@ footer a:hover {
         aspect-ratio: 3 / 4;
     }
 }
+
+/* ===== Responsive commun header/nav ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .titre {
+        font-size: 28px;
+        margin: 8px 0 0;
+        text-align: center;
+    }
+
+    .adresse {
+        font-size: 14px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav {
+        padding: 10px 12px;
+    }
+
+    .menu_navigation {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .menu_navigation img {
+        width: 20px;
+        height: 20px;
+        margin-right: 24px;
+    }
+
+    #titre-evenements {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .titre {
+        font-size: 22px;
+    }
+
+    .menu_navigation {
+        gap: 16px;
+    }
+
+    .menu_navigation img {
+        margin-right: 16px;
+    }
+}
+
+/* Footer mobile comme Accueil.css */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-nav ul {
+        align-items: center;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    .social-item {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}

@@ -15,6 +15,9 @@ ul:hover {
     color: #C6363C;
 }
 
+header ul:hover {
+    color: #C6363C;
+}
 
 .header {
     display: flex;
@@ -378,8 +381,17 @@ footer a:hover {
     }
 
     .menu_navigation {
-        gap: 30px;
+        gap: 12px;
         font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_navigation img {
+        width: 20px;
+        height: 20px;
+        margin-right: 18px;
     }
 
     .reservation-form {
@@ -420,9 +432,17 @@ footer a:hover {
     }
 
     .menu_navigation {
-        gap: 15px;
+        gap: 8px;
         font-size: 14px;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_navigation img {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
     }
 
     .reservation-form {
@@ -446,5 +466,36 @@ footer a:hover {
     .reservation-form input[type="date"],
     .reservation-form select {
         font-size: 16px;
+    }
+}
+
+/* Footer mobile comme Accueil.css */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-nav ul {
+        align-items: center;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    .social-item {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-copyright {
+        text-align: center;
     }
 }

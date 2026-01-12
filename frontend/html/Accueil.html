@@ -15,13 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Votre CSS personnalisé (doit être APRÈS Bootstrap pour pouvoir l'écraser) -->
     <link rel="stylesheet" href="../css/Accueil.css">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="header">
-        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo"></a>
-        <h1 class="titre">La Guinguette de Villedubert</h1>
-        <div class="adresse">
+        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo" data-aos="zoom-in-right"></a>
+        <h1 class="titre" data-aos="fade-down">La Guinguette de Villedubert</h1>
+        <div class="adresse" data-aos="fade-left">
           <img class="adresse-icon" src="/Image Resto/epingle.png" alt="Icône adresse">
           <div class="adresse-text">
             <p>1 route d'orbiel</p>
@@ -30,7 +32,7 @@
           </div>
         </div>
     </div>
-    <nav>
+    <nav data-aos="zoom-in">
         <ul class="menu_navigation">
             <li><a href="Reserver.html">Reserver</a></li>
             <img id="emote-resa" src="/Image Resto/reservation.png" alt="">
@@ -44,7 +46,7 @@
     </nav>
 </header>
 <main>
-    <h2 id="titre2">Bienvenue, venez redécouvrir la cuisine de votre grand-mère !</h2>
+    <h2 id="titre2" data-aos="flip-right">Bienvenue, venez redécouvrir la cuisine de votre grand-mère !</h2>
 
     <div id="carouselExampleIndicators" class="carousel slide carousel-container">
   <div class="carousel-indicators">
@@ -56,14 +58,14 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-aos="zoom-out">
       <img src="/Image Resto/Fraicheur du Sud.jpeg" class="d-block w-100" alt="Salade Fraicheur du Sud">
       <div class="carousel-caption d-none d-md-block">
         <h5>Fraîcheur du Sud</h5>
         <p>Une grande salade composée pleine de peps : mélange de jeunes pousses, tomates cerises juteuses, chou rouge croquant et chiffonnade de jambon cru affiné, relevée par la douceur du melon.</p>
       </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-aos="zoom-out">
       <img src="/Image Resto/Tartine Gourmande.jpeg" class="d-block w-100" alt="Tartine Gourmande">
       <div class="carousel-caption d-none d-md-block">
         <h5>Tartine Gourmande</h5>
@@ -109,7 +111,7 @@
   </button>
 </div>
 </main>
-<footer class="site-footer">
+<footer class="site-footer" data-aos="zoom-out">
   <div class="footer-content">
     <div class="footer-nav">
       <ul>
@@ -137,9 +139,16 @@
       </div>
     </div>
   </div>
-    <p class="footer-copyright">&copy; 2024 La Guinguette de Villedubert, Tous droits réservés.</p>
+    <p class="footer-copyright">&copy; 2026 La Guinguette de Villedubert, Tous droits réservés.</p>
   </div>
 </footer>
     
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, /* Durée de l'animation en millisecondes (1000ms = 1s) */
+    once: true,     /* L'animation ne se joue qu'une seule fois (plus élégant) */
+  });
+</script>
 </body>
 </html>
