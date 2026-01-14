@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Guingette de Villedubert | Accueil</title>
+    <title>La Guingette de Villedubert | A Propos</title>
     <!-- Insertion de bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -16,13 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Votre CSS personnalisé (doit être APRÈS Bootstrap pour pouvoir l'écraser) -->
     <link rel="stylesheet" href="../css/A propos.css">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="header">
-        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo"></a>
-        <h1 class="titre">La Guinguette de Villedubert</h1>
-        <div class="adresse">
+        <a href="Accueil.html"><img id="logo" src="/Image Resto/Logo retoucher.jpg" alt="Logo de La Guingette de Villedubert" class="logo" data-aos="zoom-in-right"></a>
+        <h1 class="titre" data-aos="fade-down">La Guinguette de Villedubert</h1>
+        <div class="adresse" data-aos="fade-left">
             <img class="adresse-icon" src="/Image Resto/epingle.png" alt="Icône adresse">
             <div class="adresse-text">
             <p>1 route d'orbiel</p>
@@ -31,7 +33,7 @@
         </div>
         </div>
     </div>
-    <nav>
+    <nav data-aos="zoom-in">
         <ul class="menu_navigation">
             <li><a href="Reserver.html">Reserver</a></li>
             <img id="emote-resa" src="/Image Resto/reservation.png" alt="">
@@ -45,28 +47,28 @@
     </nav>
 </header>
 <main>
-  <div class="titre-with-emote">
+  <div class="titre-with-emote" data-aos="flip-down">
     <h2 id="titre2">A propos</h2>
     <img class="emote-info" src="/Image Resto/bouton-dinformation.png" alt="">
   </div>
   <div class="container-content">
     <div class="ambiance">
-        <h3>Ambiance</h3>
-        <img class="emote-vibe" src="/Image Resto/des-ondes-positives.png" alt="">
-        <p>Ici, pas de chichi. La Guinguette de Villedubert, c'est avant tout un lieu de vie familial et festif. Que vous veniez pour nos soirées Karaoké endiablées, nos scènes ouvertes ou simplement pour un repas tranquille en terrasse, vous serez toujours accueillis avec le sourire. Entre amis ou en famille, on vient ici pour déconnecter et profiter de l'instant présent dans une ambiance chaleureuse et authentique.</p>
+        <h3 data-aos="fade-right">Ambiance</h3>
+        <img class="emote-vibe" src="/Image Resto/des-ondes-positives.png" alt="" data-aos="flip-down">
+        <p data-aos="fade-right">Ici, pas de chichi. La Guinguette de Villedubert, c'est avant tout un lieu de vie familial et festif. Que vous veniez pour nos soirées Karaoké endiablées, nos scènes ouvertes ou simplement pour un repas tranquille en terrasse, vous serez toujours accueillis avec le sourire. Entre amis ou en famille, on vient ici pour déconnecter et profiter de l'instant présent dans une ambiance chaleureuse et authentique.</p>
     </div>
     <div class="cuisine">
-        <h3>Cuisine</h3>
-        <img class="emote-cuisine" src="/Image Resto/cuisine.png" alt="">
-        <p>Dans nos assiettes, nous défendons le terroir. Nous privilégions les circuits courts et travaillons main dans la main avec les producteurs locaux pour vous offrir une cuisine sincère et généreuse. De nos pizzas artisanales à nos plats mijotés, tout est préparé avec amour et respect des produits de saison. C'est ça, la vraie cuisine de grand-mère !</p>
+        <h3 data-aos="zoom-in">Cuisine</h3>
+        <img class="emote-cuisine" src="/Image Resto/cuisine.png" alt="" data-aos="flip-down">
+        <p data-aos="zoom-in">Dans nos assiettes, nous défendons le terroir. Nous privilégions les circuits courts et travaillons main dans la main avec les producteurs locaux pour vous offrir une cuisine sincère et généreuse. De nos pizzas artisanales à nos plats mijotés, tout est préparé avec amour et respect des produits de saison. C'est ça, la vraie cuisine de grand-mère !</p>
     </div>
     <div class="adaptabilité">
-        <h3>Adaptabilité</h3>
-        <img class="emote-adaptabilite" src="/Image Resto/adaptabilite.png" alt="">
-        <p>Parce que la gourmandise ne doit avoir aucune barrière, nous portons une attention toute particulière à vos besoins alimentaires. Intolérances, allergies ou régimes spécifiques ? N'hésitez pas à nous solliciter. Notre chef connaît ses produits sur le bout des doigts et se fera un plaisir d'adapter nos plats pour que vous puissiez vous régaler en toute sérénité et sécurité.</p>
+        <h3 data-aos="fade-left">Adaptabilité</h3>
+        <img class="emote-adaptabilite" src="/Image Resto/adaptabilite.png" alt="" data-aos="flip-down">
+        <p data-aos="fade-left">Parce que la gourmandise ne doit avoir aucune barrière, nous portons une attention toute particulière à vos besoins alimentaires. Intolérances, allergies ou régimes spécifiques ? N'hésitez pas à nous solliciter. Notre chef connaît ses produits sur le bout des doigts et se fera un plaisir d'adapter nos plats pour que vous puissiez vous régaler en toute sérénité et sécurité.</p>
     </div>
     </div>
-    <div class="photo-presentation">
+    <div class="photo-presentation" data-aos="zoom-in-down">
         <div class="image1">
             <img src="/Image Resto/Photo de la salle interieur.png" alt="photo-interieur-guinguette">
         </div>
@@ -74,11 +76,11 @@
             <img src="/Image Resto/Photo terasse.png" alt="photo-terasse-guinguette">
         </div>
     </div>
-    <div class="map">
+    <div class="map" data-aos="zoom-out">
         <a href="https://maps.app.goo.gl/UwAfSnVFWaTcvred6"><img src="/Image Resto/map.png" alt="Carte de localisation de La Guinguette de Villedubert"></a>
     </div>
 </main>
-    <footer class="site-footer">
+    <footer class="site-footer" data-aos="zoom-out">
   <div class="footer-content">
     <div class="footer-nav">
       <ul>
@@ -108,5 +110,13 @@
   </div>
   <p class="footer-copyright">&copy; 2024 La Guinguette de Villedubert, Tous droits réservés.</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: false,
+  });
+</script>
 </body>
 </html>
